@@ -7,6 +7,28 @@ let shuttleSpeed = 15000;
 
 // 3) Write conditional expressions to satisfy the following safety rules:
 
+if (crewStatus) {
+    console.log('Crew Ready')
+ } else {
+    console.log('Crew Not Ready')
+ }
+ 
+ if (computerStatusCode === 200) {
+    console.log('Please stand by.  Computer is rebooting.')
+ } else if (computerStatusCode === 400) {
+    console.log('Success!  Computer online.')
+ } else {
+    console.log('ALERT: Computer offline!')
+ }
+ 
+ if (shuttleSpeed > 17500) {
+    console.log('ALERT: Escape velocity reached!')
+ } else if (shuttleSpeed < 8000) {
+    console.log('ALERT: Cannot maintain orbit!')
+ } else {
+    console.log('Stable speed')
+ }
+
 // a) If crewStatus is true, print "Crew Ready" else print "Crew Not Ready".
 
 
@@ -17,5 +39,16 @@ let shuttleSpeed = 15000;
 
 
 // 4) PREDICT: Do the code blocks shown in the 'predict.txt' file produce the same result?
+if (crewStatus && computerStatusCode === 200 && spaceSuitsOn) {
+    console.log("all systems go");
+ } else {
+    console.log("WARNING. Not ready");
+ }
 
-console.log(/* "Yes" or "No" */);
+ if (!crewStatus || computerStatusCode !== 200 || !spaceSuitsOn) {
+    console.log("WARNING. Not ready");
+ } else {
+    console.log("all systems go");
+ }
+ 
+console.log('YES');
