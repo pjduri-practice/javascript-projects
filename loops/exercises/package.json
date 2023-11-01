@@ -1,6 +1,5 @@
 {
-    "main": "while-Loop-Exercises.js",
-    "dependencies": {
-        "readline-sync": "1.4.9"
-    }
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
