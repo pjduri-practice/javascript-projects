@@ -19,11 +19,43 @@ function findMinValue(arr){
 6) Be sure to print the results in order to verify your code.*/
 
 //Your function here...
+function sortNumbers(arr) {
+  const newArr = []
+  while (arr.length > 0) {
+    newArr.push(findMinValue(arr))
+    arr.splice(arr.indexOf(findMinValue(arr)), arr.indexOf(findMinValue(arr)) +1)
+  }
+  return newArr
+}
 
 /* BONUS MISSION: Refactor your sorting function to use recursion below:
  */
+function recursiveSorter(arr, newArr = []) {
+  if (arr.length === 1) {
+    newArr.push(arr[0])
+    return newArr
+  }
+  newArr.push(findMinValue(arr))
+  arr.splice(arr.indexOf(findMinValue(arr)), 1)
+  return recursiveSorter(arr, newArr)
+}
 
 //Sample arrays for testing:
 let nums1 = [5, 10, 2, 42];
 let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
 let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
+
+// created extra copies of arrays since both functions remove items and leave arrays empty
+let nums4 = [5, 10, 2, 42];
+let nums5 = [-2, 0, -10, -44, 5, 3, 0, 3];
+let nums6 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
+
+
+console.log(sortNumbers(nums1))
+console.log(sortNumbers(nums2))
+console.log(sortNumbers(nums3))
+console.log()
+
+console.log(recursiveSorter(nums4))
+console.log(recursiveSorter(nums5))
+console.log(recursiveSorter(nums6))
