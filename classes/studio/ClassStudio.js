@@ -56,13 +56,18 @@ printCandidates()
 //Part 4 - Use the methods to boost Glad Gator’s status to Reserve or higher. How many tests will it take to reach Reserve status? How many to reach Accepted? Remember, scores cannot exceed 100%.
 let gatorAttempts = gladGator.scores.length
 while (true) {
-    let newScore = 90 + Math.floor(Math.random() * 10)
+    let newScore = 80 + Math.floor(Math.random() * 10)
+    // let newScore = 90 + Math.floor(Math.random() * 10)
     gladGator.addScore(newScore)
     ++gatorAttempts
-    if (gladGator.calcAverage() > 90) {
-        console.log(`It took ${gladGator.name} ${gatorAttempts} tries to reach accepted status.`)
+    if (gladGator.calcAverage() > 80) {
+        console.log(`It took ${gladGator.name} ${gatorAttempts} tries to reach reserved status.`)
         break
     }
+    // if (gladGator.calcAverage() > 90) {
+    //     console.log(`It took ${gladGator.name} ${gatorAttempts} tries to reach accepted status.`)
+    //     break
+    // }
 }
 
 printCandidates()
