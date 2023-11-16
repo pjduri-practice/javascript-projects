@@ -46,6 +46,7 @@ console.log('1')
 console.log(prideAndPrej)
 console.log(shuttleManual)
 console.log()
+
 // Code exercises 4 & 5 here:
 prideAndPrej.logCheckout(5)
 shuttleManual.discard(2023)
