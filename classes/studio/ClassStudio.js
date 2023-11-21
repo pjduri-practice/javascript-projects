@@ -45,10 +45,6 @@ const bubbaBear = new CrewCandidate('Bubba Bear', 135, [88, 85, 90])
 const merryMaltese = new CrewCandidate('Merry Maltese', 1.5, [93, 88, 97])
 const gladGator = new CrewCandidate('Glad Gator', 225, [75, 78, 62])
 
-console.log('Bubba: ')
-console.log(bubbaBear)
-console.log()
-
 function printCandidates() {
     for (const candidate of [bubbaBear, merryMaltese, gladGator]) {
         console.log()
