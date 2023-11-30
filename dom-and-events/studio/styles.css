@@ -16,6 +16,11 @@
     width: 100%;
 }
 
+#rocket {
+    left: 0rem;
+    bottom: 0rem;
+}
+
 #spaceShuttleHeight {
     display: inline-block;
 }
