@@ -14,17 +14,21 @@
         <input type="text" name="testName" />
       </label>
 
-      <label>Test Date
+      <label>Test Date: 
         <input type="date" name="testDate" />
       </label>
 
-      <label>Rocket Type
+      <label>Rocket Type: 
         <select name="rocketType">
           <option value="brant">Brant</option>
           <option value="lynx">Lynx</option>
           <option value="orion">Orion</option>
           <option value="terrier">terrier</option>
         </select>
+      </label>
+
+      <label>Number of Rocket Boosters: 
+        <input type="number" name="boosterCount" min="1" max="10" />
       </label>
       <button>Run Simulation</button>
     </form>
