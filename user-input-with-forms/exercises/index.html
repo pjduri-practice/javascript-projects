@@ -23,12 +23,22 @@
           <option value="brant">Brant</option>
           <option value="lynx">Lynx</option>
           <option value="orion">Orion</option>
-          <option value="terrier">terrier</option>
+          <option value="terrier">Terrier</option>
         </select>
       </label>
 
       <label>Number of Rocket Boosters: 
         <input type="number" name="boosterCount" min="1" max="10" />
+      </label>
+
+      <label>Wind Rating
+        <label><input type="radio" name="windRating" value="0"/>No Wind</label>
+        <label><input type="radio" name="windRating" value="10"/>Mild</label>
+        <label><input type="radio" name="windRating" value="20"/>Strong</label>
+      </label>
+
+      <label>Use production grade servers
+        <input type="checkbox" name="productionServers" />
       </label>
       <button>Run Simulation</button>
     </form>
